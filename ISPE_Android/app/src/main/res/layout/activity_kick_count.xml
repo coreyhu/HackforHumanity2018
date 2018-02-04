@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Kickaroo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -22,16 +22,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_scan_qr"
+        android:id="@+id/startButton"
         android:layout_width="220dp"
         android:layout_height="220dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/roundbutton"
+        android:background="@drawable/roundbutton_blue"
         android:text="0"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/Kickaroo" />
 
     <View
         android:id="@+id/myRectangleView"
@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_scan_qr"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
         app:layout_constraintVertical_bias="0.36" />
 
     <TextView

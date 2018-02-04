@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -53,7 +50,7 @@ public class KickCount extends AppCompatActivity {
     }
 
     private void setup() {
-        buttonCount = (Button)findViewById(R.id.btn_scan_qr);
+        buttonCount = (Button)findViewById(R.id.startButton);
         textViewHours = (TextView)findViewById(R.id.hours_number);
         textViewMinutes=(TextView)findViewById(R.id.minutes_number);
     }
