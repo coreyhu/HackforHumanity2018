@@ -6,7 +6,7 @@ import time
 import threading
 
 plt.ion()
-port = '/dev/cu.usbmodem1451'
+port = '/dev/cu.usbmodem14311'
 baud = 9600
 ser = serial.Serial(port, baud, timeout=0, bytesize=serial.FIVEBITS)
 
@@ -26,7 +26,7 @@ def log_data():
         val = ser.readline().decode()
         delta_seconds += 1
         y.append(val)
-        df.write('{},{}\n'.format(delta_seconds, val)) 
+        df.write('{},{}\n'.format(delta_seconds, val))
         drawnow(makeFig)
         if(delta_seconds>50):
             y.pop(0)
