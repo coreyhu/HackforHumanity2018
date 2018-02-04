@@ -6,15 +6,96 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.berkeley.ispe.Kickaroo_Main"
-    tools:showIn="@layout/app_bar_kickaroo__main">
+    tools:showIn="@layout/app_bar_kickaroo__main"
+    android:background="#B2CAE4">
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_width="37dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:fontFamily="serif"
+        android:text="“"
+        android:textColor="#000000"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="188dp"
+        android:layout_height="64dp"
+        android:text="Kickaroo"
+        android:textColor="#000000"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbutton"
+        android:fontFamily="cursive"
+        android:text="Start"
+        android:textSize="72sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="212dp"
+        android:layout_height="59dp"
+        android:text="Coming Out In"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2   07  03"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="months  weeks    days"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="”"
+        android:textColor="#000000"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ic_baby_1"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="409dp" />
 
 </android.support.constraint.ConstraintLayout>
