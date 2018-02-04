@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2CAE4"
+    tools:context="com.berkeley.ispe.KickCount">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Kick Count"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundbutton"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rectangle_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scan_qr"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/time_elapsed"
+        android:layout_width="227dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Time Elapsed"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView"
+        app:layout_constraintLeft_toLeftOf="@id/myRectangleView"
+        app:layout_constraintRight_toRightOf="@id/myRectangleView" />
+
+    <TextView
+        android:id="@+id/hours_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/time_elapsed"
+        app:layout_constraintLeft_toLeftOf="@id/myRectangleView"
+        android:paddingLeft="40dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/minutes_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/time_elapsed"
+        app:layout_constraintRight_toRightOf="@+id/myRectangleView"
+        android:layout_marginRight="50dp"
+        android:paddingRight="35dp"/>
+
+    <TextView
+        android:id="@+id/hours_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours"
+        app:layout_constraintTop_toBottomOf="@+id/hours_number"
+        app:layout_constraintLeft_toLeftOf="@id/myRectangleView"
+        android:paddingLeft="30dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/min_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes"
+        app:layout_constraintTop_toBottomOf="@+id/minutes_number"
+        app:layout_constraintRight_toRightOf="@id/myRectangleView"
+        android:layout_marginRight="50dp"
+        android:paddingRight="20dp"/>
+</android.support.constraint.ConstraintLayout>
