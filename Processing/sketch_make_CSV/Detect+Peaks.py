@@ -9,8 +9,9 @@ from scipy.signal import find_peaks_cwt
 import matplotlib.pyplot as plt
 from scipy.signal import lfilter
 
-df = pd.read_csv('data.csv', names=['time', 'signal'])
-df.head()
+file = input("Name of datafile: ")
+
+df = pd.read_csv(file, names=['time', 'signal'])
 df = df.drop(df.index[[0, -1]])
 df = df.dropna()
 
@@ -26,9 +27,6 @@ l_indexes = find_peaks_cwt(l_signal, time, noise_perc=10)
 
 l_peak_sigs = [l_signal[index] for index in l_indexes]
 l_peak_time = [time[index] for index in l_indexes]
-
-plt.plot(time, l_signal)
-plt.plot(l_peak_time, l_peak_sigs, '*')
 
 i = 0
 limit = 3

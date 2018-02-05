@@ -18,6 +18,7 @@ def draw():
         val = myPort.readStringUntil(13)
         if val:
             output.print((str(time.time() - ts) + "," + val.strip()).strip() + "\n")
+            print((str(time.time() - ts) + "," + val.strip()).strip() + "\n")
             
                     
 def keyPressed():
